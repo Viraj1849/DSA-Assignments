@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-          int matrix[5][4];
+          int matrix[5][4];    // Initializing Matrix of 5 rows and 4 columns
           int sparsem[21][3];
 
           sparsem[0][0] = 5;
@@ -17,12 +17,12 @@ int main()
           {
                     for (int j = 0; j < 4; j++)
                     {
-                              cout << "Enter element at indexes " << i << " " << j << " : ";
+                              cout << "Enter marks at indices: " << i << " " << j << " : ";   // Entering marks of students per course according to the indices of matrix
                               cin >> matrix[i][j];
                     }
           }
 
-          cout << "\nRows - Students, Columns - Courses" << endl;
+          cout << "\nRows - Students, Columns - Courses" << endl;   // Display in the matrix
           for (int i = 0; i < 5; i++)
           {
                     for (int j = 0; j < 4; j++)
@@ -47,7 +47,7 @@ int main()
           }
           sparsem[0][2] = k - 1;
 
-          cout << "Sparse Matrix :" << endl;
+          cout << "Sparse Matrix :" << endl;  // Display the sparse matrix
           for (int i = 0; i < k; i++)
           {
                     cout << sparsem[i][0] << " " << sparsem[i][1] << " " << sparsem[i][2] << endl;
@@ -99,17 +99,18 @@ int main()
                               c_avg[j] = 0;
           }
 
-          cout << "Average marks per student:" << endl;
+          cout << "Average marks per student:" << endl;   // Display average marks per student
           for (int i = 0; i < 5; i++)
           {
                     cout << "Student " << (i + 1) << ": " << s_marks[i] << endl;
           }
 
-          cout << "Average marks per course:" << endl;
+          cout << "Average marks per course:" << endl;   // Display average marks per course
           for (int j = 0; j < 4; j++)
           {
                     cout << "Course " << (j + 1) << ": " << c_avg[j] << endl;
           }
 
           return 0;
+
 }
